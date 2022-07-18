@@ -3235,6 +3235,7 @@ select.form-control-lg:not([size]):not([multiple]),
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  background-color: #E6E6FA;
 }
 
 .btn:focus,

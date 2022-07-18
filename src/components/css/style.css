@@ -1,25 +1,33 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .rounded-circle {
-        background: red;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+            height: 100px;
+        }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .photoStyle {
+                padding: 0px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .rounded-circle {
-        background: green;
         width: 70px;
         height: 70px;
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .photoStyle {
+        padding: 10% 5% 10% 10%;
+    }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .rounded-circle {
-        background: blue;
         width: 80px;
         height: 80px;
     }
@@ -28,7 +36,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .rounded-circle {
-        background: orange;
         width: 90px;
         height: 90px;
     }
@@ -37,54 +44,81 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .rounded-circle {
-        background: pink;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+            height: 150px;
     }
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .responsive-img {
-        background: red;
-        width: 50px;
-        height: 50px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .responsive-img {
-        background: green;
-        width: 70px;
-        height: 70px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .responsive-img {
-        background: blue;
-        width: 80px;
-        height: 80px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .responsive-img {
-        background: orange;
-        width: 90px;
-        height: 90px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .responsive-img {
-        background: pink;
-        width: 100px;
-        height: 100px;
+    .photoStyle {
+        padding: 14% 0% 10% 15%;
     }
+}
+
+.rounded-circle {
+    margin-bottom: 5%;
+}
+
+.checked {
+    color: #FFB6C1;
+}
+
+.border {
+    box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 10px;
+}
+
+.stars {
+    align-content: center;
+}
+
+.reviewsText {
+    color: #778899;
+}
+
+.globalReviewText {
+    color: #F08080;
+}
+.titleText {
+    color: #20B2AA
+}
+
+.tag12 {
+    font-size: x-large;
+    text-align: center;
+}
+.tag6 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.tag4 {
+    font-size: x-large;
+    text-align: center;
+}
+.tag3 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.tag2 {
+    font-size: x-large;
+    text-align: center;
+}
+.tag1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tagText {
+    padding: 1px 15px 1px 15px;
+    border-radius: 10px 10px 10px 10px;
 }

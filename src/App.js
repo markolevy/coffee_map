@@ -6,6 +6,7 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 import ReviewMenu from './components/ReviewMenu';
 
 import { REVIEWS } from './shared/review';
+import { TAGS } from './shared/tag';
 
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       reviewList: REVIEWS,
+      tagList: TAGS,
     };
   }
 
@@ -25,7 +27,7 @@ class App extends React.Component {
           </div>
         </Navbar>
         <h1>Last coffee reviews !</h1>
-        <ReviewMenu reviewList={this.state.reviewList} />
+        <ReviewMenu reviewList={this.state.reviewList} tagList={this.state.tagList} />
       </div>
     );
   }
