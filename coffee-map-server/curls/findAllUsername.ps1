@@ -1,0 +1,1 @@
+﻿Invoke-RestMethod -Method 'Get' -Uri http://localhost:8080/api/Users?username=marko -Body ($params|ConvertTo-Json) -ContentType "application/json"

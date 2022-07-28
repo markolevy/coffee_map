@@ -7,6 +7,7 @@ import './css/bootstrap.min.css'
 import './css/style.css'
 
 import ReviewElt from './ReviewElt';
+import ReviewWriting from './reviewWriting';
 
 class ReviewMenu extends React.Component {
     constructor(props) {
@@ -58,6 +59,7 @@ class ReviewMenu extends React.Component {
                                     </div>
                                 </li>
                             </ul>
+                            <ReviewWriting />
                             {reviews}
                         </div>
                     </div>
