@@ -17,6 +17,10 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.STRING,
             allowNull: false
         },
+        avatar: {
+            type: Sequelize.STRING,
+            defaultValue: 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'
+        }
     });
     return User;
  }
