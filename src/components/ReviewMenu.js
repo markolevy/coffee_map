@@ -1,4 +1,21 @@
 import * as React from 'react';
+import axios from 'axios';
+
+import { myFunction } from './js/scripts.js';
+
+import {
+    getAllUsers,
+    getUsersById,
+    getUsersByUsername,
+    postUser,
+    putUser,
+    deleteAllUsers,
+    deleteUserById,
+    clearGetOutput,
+    clearPostOutput,
+    clearPutOutput,
+    clearDeleteOutput
+} from './js/main.js';
 
 import './css/bootstrap-reboot.css'
 import './css/bootstrap-reboot.min.css'
@@ -8,6 +25,7 @@ import './css/style.css'
 
 import ReviewElt from './ReviewElt';
 import ReviewWriting from './reviewWriting';
+
 
 class ReviewMenu extends React.Component {
     constructor(props) {
@@ -50,7 +68,7 @@ class ReviewMenu extends React.Component {
                                 </li>
                                 <li class="nav-item dropdown ml-md-auto">
                                     <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                                        data-toggle="dropdown">Dropdown link</a>
+                                        User-toggle="dropdown">Dropdown link</a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another
                                             action</a> <a class="dropdown-item" href="#">Something else here</a>
@@ -59,15 +77,18 @@ class ReviewMenu extends React.Component {
                                     </div>
                                 </li>
                             </ul>
+                            <button onclick="getAllUsers()">Get All</button>
+                            <input type="text" id="post-username" placeholder="username"></input>
+                            <input type="text" id="post-email" placeholder="email"></input>
+                            <input type="text" id="post-password" placeholder="password"></input>
+                            <button onClick={() => postUser()}>Post User</button>
+                            <button onClick={() => getAllUsers()}>Get all users</button>
+                            <p id="getResult"></p>
                             <ReviewWriting />
                             {reviews}
                         </div>
                     </div>
                 </div>
-
-                <script src="js/jquery.min.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/scripts.js"></script>
             </body>
         )
     }
